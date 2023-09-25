@@ -1,0 +1,121 @@
+.table-search-item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.Profile-list-title {
+    color: #444;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.Profile-list-title span {
+    color: rgba(68, 68, 68, 0.75);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.56px;
+}
+.dashboard-content-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.dashboard-leave-box{
+    background: url(../img/bg.png) !important;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.dashboard-list-wraper {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(253, 84, 68, 0.30);
+    min-height: 50vh;
+    padding: 0;
+}
+.dashboard-list-title {
+    border-radius: 15px 15px 0px 0px;
+    border: 0.963px solid rgba(0, 0, 0, 0.10);
+    background: #FFF4EE;
+    box-shadow: 0px 2px 4px 0px rgba(68, 68, 68, 0.15);
+    padding: 1rem 2rem;
+    height: fit-content;
+}
+.dashboard-list-header {
+    color: #FD5444;
+    letter-spacing: 0.746px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.dashboard-list-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1.5fr;
+}
+.dashboard-list-box-item {
+    width: 100%;
+    padding:2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.leave-taken, .leave-remaining{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.vertical-bordered-hr{
+    border-left: 1px solid #FD5444;
+    height: 100px;
+
+}
+.leave-taken h4, .leave-remaining h4{
+    color: #444;
+    font-size: 32px;
+    font-weight: 500;
+}
+.leave-taken p, .leave-remaining p{
+    color: rgba(68, 68, 68, 0.75);
+    font-size: 18px;
+    font-weight: 400;
+}
+.dashboard-list-box-btn{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard-list-box-btn button{
+    width: fit-content;
+    border-radius: 4px;
+    background: #FD5444;
+    padding: .5rem 2rem;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+@media (max-width:992px) {
+    .dashboard-content-box{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:400px) {
+    .Profile-list-title {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .dashboard-list-title {
+        padding: 1rem 1rem;
+    }
+    .dashboard-list-header {
+        font-size: 24px;
+    }
+    .leave-taken h4, .leave-remaining h4 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+}

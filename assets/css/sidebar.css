@@ -1,0 +1,302 @@
+/* ======= sidebar ================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8a909d;
+  text-align: left;
+  background-color: #f5f6fa;
+}
+/* App brand */
+.app-brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.app-brands a {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 10px 0;
+color: #FD5444;
+}
+.app-brand a img{
+width: 100%;
+}
+.sidebar .nav > li > a i {
+ margin-right: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+.app-brand a {
+  transition: none;
+}
+}
+
+@media (min-width: 768px) {
+.app-brand a {
+  overflow: hidden;
+}
+}
+
+.app-brands a img {
+max-width:100%;
+vertical-align: middle;
+}
+
+.app-brand .brand-name {
+font-size: 1.12rem;
+margin-left: 0.94rem;
+max-width: 170px;
+display: flex;
+color: #444;
+gap: 0;
+flex-direction: column;
+}
+.app-brand .brand-name span{
+font-size: 14px;
+color: #B1B1B1;
+}
+
+/* sidebar */
+.sidebar {
+display: flex;
+flex-direction: column;
+overflow: hidden;
+height: 100%;
+z-index: 1050;
+min-height: 100vh;
+position: relative;
+}
+
+.sidebar .sidebar-inner {
+display: flex;
+flex-direction: column;
+flex: 1 1 auto;
+/* margin-top: 1.9rem; */
+padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+.sidebar .sidebar-inner {
+  margin-top: 0rem;
+}
+}
+
+/* @media (min-width: 1200px) {
+.sidebar .sidebar-inner {
+  margin-top: 2.5rem;
+}
+} */
+
+
+
+.sidebar .sidebar-inner > li > a {
+padding: 1.25rem .5rem;
+line-height: 20px;
+color:#343434;
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 500;
+white-space: nowrap;
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.sidebar .sidebar-inner > li.active > a {
+position: relative;
+z-index: 10;
+color: #38C173;
+background: rgba(56, 193, 115, 0.2);
+}
+
+.sidebar .sidebar-inner > li.active > a:before {
+opacity: 1;
+}
+.sidebar .sidebar-inner .section-title {
+padding: 1.25rem 1.56rem 0;
+font-weight: 700;
+text-transform: uppercase;
+font-size: 0.75rem;
+color: rgba(138, 144, 157, 0.7);
+letter-spacing: 1.2px;
+}
+
+.sidebar .sidebar-inner .sub-menu .section-title {
+padding: 1.25rem .94rem 0.625rem;
+}
+.has-sub{
+  /* margin: 0 .5rem; */
+}
+.sidebar-active-btn{
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #FFFFFF; */
+    margin: 20px 0px;
+    background: #FD5444;
+}
+.sidebar .sidenav-item-link:hover{
+background:#FFF4EE;
+color: #fff;
+}
+
+.sidebar .sidenav-item-link-active .nav-text {
+  margin-right: auto;
+  overflow: hidden;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.66px;
+}
+.sidebar .sidenav-item-link .nav-text {
+  margin-right: auto;
+  overflow: hidden;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #65676D;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.66px;
+}
+.sidebar .sidenav-item-link .nav-text::after {
+  color: #fff;
+}
+
+.sidebar .sidenav-item-link .badge {
+padding: .4em .6em;
+}
+.sidebar .sidenav-item-link {
+  display: flex !important;
+  flex-grow: 1;
+  align-items: center;
+  gap: 15px;
+  border-radius: 6px;
+  /* background: #FD5444; */
+  /* border-bottom: 1px solid #E2E2E2; */
+}
+/*  Nav menus Icon Styles */
+.sidebar .nav > li > a i {
+  float: left;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.sidebar .nav > li:hover> a i {
+  color:#fff;
+}
+.sidebar .nav > .has-sub:hover> a svg path{
+  fill:#FD5444;
+}
+.sidebar .nav > .has-sub:hover> a span{
+ color:#FD5444;
+}
+.sidebar .nav > .has-sub:hover> a .caret::before{
+ color:#FD5444;
+}
+.sidebar .sub-menu > li:hover> a svg path{
+  fill:#FD5444;
+}
+.sidebar .sub-menu > li:hover> a span{
+ color:#FD5444;
+}
+.sidebar .sub-menu > li:hover> a .caret::before{
+ color:#FD5444;
+}
+
+.sidebar .sidebar-inner > li.expand > a {
+  position: relative;
+  z-index: 10;
+  background-color: #FD5444;
+}
+.sidebar .sidebar-inner > .has-sub.expand > a span{
+  color: #fff;
+}
+.sidebar .sidebar-inner > .has-sub.expand > a svg path{
+  fill: #fff;
+}
+.sidebar .sidebar-inner > .has-sub.expand > a .caret:before{
+  color: #fff;
+}
+/* .expand .sidenav-item-link .nav-text {
+  color: #fff;
+} */
+.sidebar-dark .sidebar .nav > li.active > a {
+  color: #fff;
+}
+
+.sidebar li > a .caret:before {
+  content: '\f142';
+  display: block;
+  text-align: center;
+  transition: all .2s linear;
+  opacity: 1;
+  color: #000000;
+}
+
+.sidebar-dark .sidebar .sub-menu {
+  background-color: #ffffff;
+}
+.sidebar-dark .sidebar .sub-menu > li.active > a{
+  font-weight: 500;
+  background: #fff;
+}
+.sidebar-dark .sidebar .sub-menu > li > a {
+  color: #343434;
+  font-weight: 500;
+}
+.sidebar-dark .sidebar .sub-menu > li >:hover{
+  color: #ffffff;
+  font-weight: 500;
+  background: #FFF4EE;
+}
+.sidebar .sub-menu > li > a:hover {
+  color: #ffffff !important;
+}
+.sidebar .sub-menu > li > a {
+  padding:15px 20px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  font-size: 0.88rem;
+}
+.header-light .navbar {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 0 0 15px 15px;
+
+}
+.navbar .sidebar-offcanvas-toggle, .navbar .sidebar-toggle {
+  color: #FD5444;
+}
+
+.header-light .navbar .search-form .btn, .header-light .navbar .search-form .input-group input.form-control::placeholder{
+  color: rgba(101, 103, 109, 0.60);
+}
+.navbar .navbar-right .navbar-nav .notifications-menu .dropdown-toggle i {
+  color: #FD5444;
+}
+.header-light .navbar .navbar-right .navbar-nav .user-menu .dropdown-toggle > span {
+  color: #fff;
+}
+.navbar .navbar-right .navbar-nav .user-menu .dropdown-toggle:after {
+  color: #FD5444;
+}
+.navbar .dropdown-menu > li a:hover {
+  background: #FD5444;
+  color: #fff;
+}

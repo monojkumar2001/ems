@@ -1,0 +1,25 @@
+.leave-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leave-apply-btn {
+    padding: 9px 28px;
+    border-radius: 7px;
+    background: #FD5444;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+.employee-list-search-btn {
+    width: 100%;
+    text-align: center;
+    background: #FD5444;
+    padding: 0.59rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    color: #fff;
+    letter-spacing: .5px;
+}

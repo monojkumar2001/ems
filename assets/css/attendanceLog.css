@@ -1,0 +1,30 @@
+.attendance-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.Category-list-title {
+    padding: 10px 0 5px 0;
+    text-align: center;
+    background: #FFF4EE;
+    border-radius: 15px 15px 0 0;
+}
+.Category-list-title-name {
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
+.employee-list-search-btn {
+    width: 100%;
+    text-align: center;
+    background: #FD5444;
+    padding: 0.59rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    color: #fff;
+    letter-spacing: .5px;
+}

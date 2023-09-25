@@ -1,0 +1,113 @@
+.profile-from-box {
+    border: 1px solid #FD5444;
+    border-radius: 15px;
+    background: #FFF;
+    margin-bottom: 50px;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.from-list-title {
+    color: #FFF;
+    margin: 10px 0;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.from {
+    width: 90%;
+    margin: 10px auto;
+}
+.from label {
+    color: #444;
+    font-size: 22px;
+    font-weight: 500;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.5em + 1.18rem + 2px);
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #FD5444;
+    border-radius: 15px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.input-filed-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-filed-item input {
+    width: fit-content;
+    padding: 7px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.input-from-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.input-from-btn button {
+    width: fit-content;
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-from-btn button {
+    width: fit-content;
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.submit-btn {
+    background: #55CE64;
+}
+.reset-btn {
+    background: #B4B4B4;
+}
+
+@media (max-width:568px) {
+    .row {
+        margin-top: 0rem !important;
+    }
+    .profile-from-box {
+        margin-top: 2rem;
+    }
+    .from {
+        width: 100%;
+    }
+    .from label {
+        font-size: 18px;
+    }
+    .form-control {
+        height: calc(1.5em + 1rem + 2px);
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: 1px solid #FD5444;
+    }
+    .from-list-title {
+        font-size: 24px;
+        letter-spacing: .8px;
+    }
+    .input-from-btn {
+        gap: 1rem;
+    }
+    .input-from-btn button {
+        padding: 10px 30px;
+    }
+    .input-from-btn button {
+        padding: 10px 30px;
+    }
+}
